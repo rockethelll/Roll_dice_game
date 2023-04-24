@@ -16,12 +16,12 @@ const player2 = document.querySelector(".player--2")
 const roundScoreP2 = document.getElementById("round--2")
 const globalScoreP2 = document.getElementById("global--2")
 
-let playing, activePlayer, roundScore, scores
+let arePlaying, activePlayer, roundScore, scores
 
 // Initialize game board
 const init = () => {
   scores = [0, 0]
-  playing = true
+  arePlaying = true
 
   activePlayer = 1
   roundScoreP1.textContent = 0
@@ -49,7 +49,7 @@ const switchPlayer = () => {
 }
 
 rollDice.addEventListener("click", () => {
-  if (playing) {
+  if (arePlaying) {
     const dice = Math.trunc(Math.random() * 6) + 1
     diceImg.src = `./images/dice-${dice}.png`
 
@@ -68,14 +68,14 @@ rollDice.addEventListener("click", () => {
 
 // Hold scores
 holdButton.addEventListener("click", () => {
-  if (playing) {
+  if (arePlaying) {
     scores[activePlayer - 1] += roundScore
     document.getElementById(`global--${activePlayer}`).textContent =
       scores[activePlayer - 1]
 
     // Check if score's player >= 100
     if (scores[activePlayer - 1] >= 100) {
-      playing = false
+      arePlaying = false
       diceImg.classList.add("hidden")
 
       document
