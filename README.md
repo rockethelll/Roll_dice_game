@@ -1,4 +1,4 @@
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/TGianella/cookin)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rockethelll/Roll_dice_game)
 
 # Roll Dice Game
 
