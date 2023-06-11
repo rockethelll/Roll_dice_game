@@ -80,7 +80,7 @@ main {
 
 .player--active h2::after {
   content: "\2022";
-  font-size: 47px;
+  font-size: 3rem;
   position: absolute;
   color: #c7365f;
   margin-left: 0.8em;
@@ -178,3 +178,212 @@ main {
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 1440px) {
+  main {
+    width: 70rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.8rem;
+  }
+  .name {
+    font-size: 3.2rem;
+  }
+  .global {
+    font-size: 7rem;
+  }
+  .dice {
+    height: 8rem;
+    top: 15rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    width: 47rem;
+  }
+  .player {
+    padding: 9rem 6rem;
+  }
+  .player--active h2::after {
+    font-size: 2rem;
+    margin-left: 0.8em;
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.3rem 1.5rem;
+  }
+  .btn--roll {
+    top: 41.3rem;
+  }
+  .btn--hold {
+    top: 47.1rem;
+  }
+  .name {
+    font-size: 2.4rem;
+  }
+  .global {
+    font-size: 5rem;
+  }
+  .dice {
+    height: 6rem;
+    top: 25rem;
+  }
+  .round-label {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+  }
+  .round-score {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 25rem;
+    flex-direction: column;
+  }
+  .player {
+    padding: 1rem;
+  }
+  .player--active h2::after {
+    font-size: 2rem;
+    margin-left: 0.8em;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.3rem;
+    display: flex;
+  }
+  .btn--new {
+    top: 1rem;
+  }
+  .btn--roll {
+    top: 56rem;
+    left: 25%;
+  }
+  .btn--hold {
+    top: 56rem;
+    left: 75%;
+    padding: 0.4rem 1rem;
+  }
+  .name {
+    top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+  .global {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .dice {
+    height: 6rem;
+    top: 27rem;
+  }
+  .round {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .round-label {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+  }
+  .round-score {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    width: 20rem;
+    flex-direction: column;
+  }
+  .player--active h2::after {
+    font-size: 2rem;
+    margin-left: 0.8em;
+  }
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 1.3rem;
+    display: flex;
+  }
+  .btn--new {
+    top: 1rem;
+  }
+  .btn--roll {
+    top: 55rem;
+    left: 25%;
+  }
+  .btn--hold {
+    top: 55rem;
+    left: 70%;
+    padding: 0.4rem 1rem;
+  }
+  .name {
+    top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+  .global {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .dice {
+    height: 6rem;
+    top: 27rem;
+  }
+  .round {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .round-label {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+  }
+  .round-score {
+    font-size: 2.8rem;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 40rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .global {
+    font-size: 5rem;
+  }
+  .dice {
+    height: 6rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.3rem 1.2rem;
+    margin: 0.5rem;
+  }
+  .round {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .round-label {
+    font-size: 1rem;
+  }
+  .round-score {
+    font-size: 2rem;
+  }
+  .player--active h2::after {
+    font-size: 2rem;
+    margin-left: 0.8em;
+  }
+  .player {
+    padding: 9rem 6rem;
+  }
+  body {
+    height: 100vh;
+  }
+} */
